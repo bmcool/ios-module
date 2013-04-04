@@ -50,7 +50,7 @@ static OpenWeatherMap *sharedInstance;
     _latitude = latitude;
     _longitude = longitude;
     
-    NSString *response = [Http getWithUrl:[NSString stringWithFormat:@"http://openweathermap.org/data/2.1/find/city?lat=%f&lon=%f&cnt=1", latitude, longitude] encoding:NSUTF8StringEncoding];
+    NSString *response = [Http getWithUrl:[NSString stringWithFormat:@"http://openweathermap.org/data/2.1/find/city?lat=%f&lon=%f&cnt=1&APPID=ca16a39c4d442a6f2f589542f97c6708", latitude, longitude] encoding:NSUTF8StringEncoding];
     
     _cacheData = [response objectFromJSONString];
     

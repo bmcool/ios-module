@@ -15,6 +15,8 @@
     id _cacheData;
 }
 
+@property (assign, nonatomic) NSString *city;
+
 @property (assign, nonatomic) NSInteger humidity;
 @property (assign, nonatomic) NSInteger pressure;
 @property (assign, nonatomic) CGFloat temp;

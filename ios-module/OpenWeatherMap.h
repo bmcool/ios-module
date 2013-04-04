@@ -32,5 +32,6 @@
 
 + (id)sharedInstance;
 - (void)updateWithLatitude:(CGFloat)latitude Longitude:(CGFloat)longitude;
+- (void)updateWeather;
 
 @end

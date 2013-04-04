@@ -18,6 +18,8 @@
         
         self.weather = [Weather new];
         
+        self.city = [_cacheData objectForKey:@"name"];
+        
         [self setValuesForKeysWithDictionary:[_cacheData objectForKey:@"main"]];
         [self.weather setValuesForKeysWithDictionary:[[_cacheData objectForKey:@"weather"] objectAtIndex:0]];
     }
