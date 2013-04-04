@@ -7,97 +7,208 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7969F9BA170D5EF5005224DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7969F9B9170D5EF5005224DE /* Foundation.framework */; };
-		7969F9BF170D5EF5005224DE /* ios_module.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7969F9BE170D5EF5005224DE /* ios_module.h */; };
-		7969F9C1170D5EF5005224DE /* ios_module.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F9C0170D5EF5005224DE /* ios_module.m */; };
+		7969F7F8170D5681005224DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7969F7F7170D5681005224DE /* Foundation.framework */; };
+		7969F7FD170D5681005224DE /* ios_module.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7969F7FC170D5681005224DE /* ios_module.h */; };
+		7969F7FF170D5681005224DE /* ios_module.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F7FE170D5681005224DE /* ios_module.m */; };
+		7969F8FE170D5764005224DE /* Http.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F8DE170D5764005224DE /* Http.m */; };
+		7969F8FF170D5764005224DE /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F8E0170D5764005224DE /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7969F900170D5764005224DE /* MethodSwizzle.c in Sources */ = {isa = PBXBuildFile; fileRef = 7969F8E1170D5764005224DE /* MethodSwizzle.c */; };
+		7969F902170D5764005224DE /* MotionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F8E7170D5764005224DE /* MotionViewController.m */; };
+		7969F903170D5764005224DE /* MoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F8E9170D5764005224DE /* MoveViewController.m */; };
+		7969F904170D5764005224DE /* NSArray+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F8EB170D5764005224DE /* NSArray+Addition.m */; };
+		7969F905170D5764005224DE /* NSObject+PropertyListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F8ED170D5764005224DE /* NSObject+PropertyListing.m */; };
+		7969F906170D5764005224DE /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F8EF170D5764005224DE /* NSObject+Swizzle.m */; };
+		7969F907170D5764005224DE /* NSUserDefaults+MPSecureUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F8F1170D5764005224DE /* NSUserDefaults+MPSecureUserDefaults.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7969F908170D5764005224DE /* OpenWeatherMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F8F3170D5764005224DE /* OpenWeatherMap.m */; };
+		7969F909170D5764005224DE /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F8F5170D5764005224DE /* ShakeViewController.m */; };
+		7969F90A170D5764005224DE /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F8F7170D5764005224DE /* Station.m */; };
+		7969F90B170D5764005224DE /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F8F9170D5764005224DE /* UIView+Addition.m */; };
+		7969F90C170D5764005224DE /* UIViewController+StoryboardExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F8FB170D5764005224DE /* UIViewController+StoryboardExtend.m */; };
+		7969F90D170D5764005224DE /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F8FD170D5764005224DE /* Weather.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		7969F9B4170D5EF5005224DE /* CopyFiles */ = {
+		7969F7F2170D5681005224DE /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				7969F9BF170D5EF5005224DE /* ios_module.h in CopyFiles */,
+				7969F7FD170D5681005224DE /* ios_module.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7969F9B6170D5EF5005224DE /* libios-module.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libios-module.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7969F9B9170D5EF5005224DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		7969F9BD170D5EF5005224DE /* ios-module-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-module-Prefix.pch"; sourceTree = "<group>"; };
-		7969F9BE170D5EF5005224DE /* ios_module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_module.h; sourceTree = "<group>"; };
-		7969F9C0170D5EF5005224DE /* ios_module.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_module.m; sourceTree = "<group>"; };
+		7969F7F4170D5681005224DE /* libios-module.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libios-module.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7969F7F7170D5681005224DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7969F7FB170D5681005224DE /* ios-module-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-module-Prefix.pch"; sourceTree = "<group>"; };
+		7969F7FC170D5681005224DE /* ios_module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_module.h; sourceTree = "<group>"; };
+		7969F7FE170D5681005224DE /* ios_module.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_module.m; sourceTree = "<group>"; };
+		7969F8DD170D5764005224DE /* Http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Http.h; sourceTree = "<group>"; };
+		7969F8DE170D5764005224DE /* Http.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Http.m; sourceTree = "<group>"; };
+		7969F8DF170D5764005224DE /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		7969F8E0170D5764005224DE /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		7969F8E1170D5764005224DE /* MethodSwizzle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MethodSwizzle.c; sourceTree = "<group>"; };
+		7969F8E2170D5764005224DE /* MethodSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzle.h; sourceTree = "<group>"; };
+		7969F8E6170D5764005224DE /* MotionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionViewController.h; sourceTree = "<group>"; };
+		7969F8E7170D5764005224DE /* MotionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionViewController.m; sourceTree = "<group>"; };
+		7969F8E8170D5764005224DE /* MoveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveViewController.h; sourceTree = "<group>"; };
+		7969F8E9170D5764005224DE /* MoveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveViewController.m; sourceTree = "<group>"; };
+		7969F8EA170D5764005224DE /* NSArray+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Addition.h"; sourceTree = "<group>"; };
+		7969F8EB170D5764005224DE /* NSArray+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Addition.m"; sourceTree = "<group>"; };
+		7969F8EC170D5764005224DE /* NSObject+PropertyListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PropertyListing.h"; sourceTree = "<group>"; };
+		7969F8ED170D5764005224DE /* NSObject+PropertyListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PropertyListing.m"; sourceTree = "<group>"; };
+		7969F8EE170D5764005224DE /* NSObject+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzle.h"; sourceTree = "<group>"; };
+		7969F8EF170D5764005224DE /* NSObject+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzle.m"; sourceTree = "<group>"; };
+		7969F8F0170D5764005224DE /* NSUserDefaults+MPSecureUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+MPSecureUserDefaults.h"; sourceTree = "<group>"; };
+		7969F8F1170D5764005224DE /* NSUserDefaults+MPSecureUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+MPSecureUserDefaults.m"; sourceTree = "<group>"; };
+		7969F8F2170D5764005224DE /* OpenWeatherMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenWeatherMap.h; sourceTree = "<group>"; };
+		7969F8F3170D5764005224DE /* OpenWeatherMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWeatherMap.m; sourceTree = "<group>"; };
+		7969F8F4170D5764005224DE /* ShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeViewController.h; sourceTree = "<group>"; };
+		7969F8F5170D5764005224DE /* ShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeViewController.m; sourceTree = "<group>"; };
+		7969F8F6170D5764005224DE /* Station.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Station.h; sourceTree = "<group>"; };
+		7969F8F7170D5764005224DE /* Station.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Station.m; sourceTree = "<group>"; };
+		7969F8F8170D5764005224DE /* UIView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Addition.h"; sourceTree = "<group>"; };
+		7969F8F9170D5764005224DE /* UIView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addition.m"; sourceTree = "<group>"; };
+		7969F8FA170D5764005224DE /* UIViewController+StoryboardExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+StoryboardExtend.h"; sourceTree = "<group>"; };
+		7969F8FB170D5764005224DE /* UIViewController+StoryboardExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+StoryboardExtend.m"; sourceTree = "<group>"; };
+		7969F8FC170D5764005224DE /* Weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
+		7969F8FD170D5764005224DE /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
+		7969F988170D5B14005224DE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		7969F98D170D5BBD005224DE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7969F9B3170D5EF5005224DE /* Frameworks */ = {
+		7969F7F1170D5681005224DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7969F9BA170D5EF5005224DE /* Foundation.framework in Frameworks */,
+				7969F7F8170D5681005224DE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7969F9AB170D5EF5005224DE = {
+		7969F7E9170D5681005224DE = {
 			isa = PBXGroup;
 			children = (
-				7969F9BB170D5EF5005224DE /* ios-module */,
-				7969F9B8170D5EF5005224DE /* Frameworks */,
-				7969F9B7170D5EF5005224DE /* Products */,
+				7969F7F9170D5681005224DE /* ios-module */,
+				7969F7F6170D5681005224DE /* Frameworks */,
+				7969F7F5170D5681005224DE /* Products */,
+				7969F98D170D5BBD005224DE /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
-		7969F9B7170D5EF5005224DE /* Products */ = {
+		7969F7F5170D5681005224DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7969F9B6170D5EF5005224DE /* libios-module.a */,
+				7969F7F4170D5681005224DE /* libios-module.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7969F9B8170D5EF5005224DE /* Frameworks */ = {
+		7969F7F6170D5681005224DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7969F9B9170D5EF5005224DE /* Foundation.framework */,
+				7969F7F7170D5681005224DE /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7969F9BB170D5EF5005224DE /* ios-module */ = {
+		7969F7F9170D5681005224DE /* ios-module */ = {
 			isa = PBXGroup;
 			children = (
-				7969F9BE170D5EF5005224DE /* ios_module.h */,
-				7969F9C0170D5EF5005224DE /* ios_module.m */,
-				7969F9BC170D5EF5005224DE /* Supporting Files */,
+				7969F910170D57B8005224DE /* OpenWeatherMap */,
+				7969F90F170D57A1005224DE /* Additions */,
+				7969F90E170D5797005224DE /* ViewControllers */,
+				7969F8DD170D5764005224DE /* Http.h */,
+				7969F8DE170D5764005224DE /* Http.m */,
+				7969F8DF170D5764005224DE /* JSONKit.h */,
+				7969F8E0170D5764005224DE /* JSONKit.m */,
+				7969F7FC170D5681005224DE /* ios_module.h */,
+				7969F7FE170D5681005224DE /* ios_module.m */,
+				7969F7FA170D5681005224DE /* Supporting Files */,
 			);
 			path = "ios-module";
 			sourceTree = "<group>";
 		};
-		7969F9BC170D5EF5005224DE /* Supporting Files */ = {
+		7969F7FA170D5681005224DE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7969F9BD170D5EF5005224DE /* ios-module-Prefix.pch */,
+				7969F7FB170D5681005224DE /* ios-module-Prefix.pch */,
+				7969F988170D5B14005224DE /* README.md */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7969F90E170D5797005224DE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7969F911170D5808005224DE /* MotionViewController */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7969F90F170D57A1005224DE /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				7969F8EA170D5764005224DE /* NSArray+Addition.h */,
+				7969F8EB170D5764005224DE /* NSArray+Addition.m */,
+				7969F8EC170D5764005224DE /* NSObject+PropertyListing.h */,
+				7969F8ED170D5764005224DE /* NSObject+PropertyListing.m */,
+				7969F8EE170D5764005224DE /* NSObject+Swizzle.h */,
+				7969F8EF170D5764005224DE /* NSObject+Swizzle.m */,
+				7969F8E1170D5764005224DE /* MethodSwizzle.c */,
+				7969F8E2170D5764005224DE /* MethodSwizzle.h */,
+				7969F8F8170D5764005224DE /* UIView+Addition.h */,
+				7969F8F9170D5764005224DE /* UIView+Addition.m */,
+				7969F8FA170D5764005224DE /* UIViewController+StoryboardExtend.h */,
+				7969F8FB170D5764005224DE /* UIViewController+StoryboardExtend.m */,
+				7969F8F0170D5764005224DE /* NSUserDefaults+MPSecureUserDefaults.h */,
+				7969F8F1170D5764005224DE /* NSUserDefaults+MPSecureUserDefaults.m */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
+		7969F910170D57B8005224DE /* OpenWeatherMap */ = {
+			isa = PBXGroup;
+			children = (
+				7969F8F2170D5764005224DE /* OpenWeatherMap.h */,
+				7969F8F3170D5764005224DE /* OpenWeatherMap.m */,
+				7969F8F6170D5764005224DE /* Station.h */,
+				7969F8F7170D5764005224DE /* Station.m */,
+				7969F8FC170D5764005224DE /* Weather.h */,
+				7969F8FD170D5764005224DE /* Weather.m */,
+			);
+			name = OpenWeatherMap;
+			sourceTree = "<group>";
+		};
+		7969F911170D5808005224DE /* MotionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7969F8E6170D5764005224DE /* MotionViewController.h */,
+				7969F8E7170D5764005224DE /* MotionViewController.m */,
+				7969F8E8170D5764005224DE /* MoveViewController.h */,
+				7969F8E9170D5764005224DE /* MoveViewController.m */,
+				7969F8F4170D5764005224DE /* ShakeViewController.h */,
+				7969F8F5170D5764005224DE /* ShakeViewController.m */,
+			);
+			name = MotionViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7969F9B5170D5EF5005224DE /* ios-module */ = {
+		7969F7F3170D5681005224DE /* ios-module */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7969F9C4170D5EF5005224DE /* Build configuration list for PBXNativeTarget "ios-module" */;
+			buildConfigurationList = 7969F802170D5681005224DE /* Build configuration list for PBXNativeTarget "ios-module" */;
 			buildPhases = (
-				7969F9B2170D5EF5005224DE /* Sources */,
-				7969F9B3170D5EF5005224DE /* Frameworks */,
-				7969F9B4170D5EF5005224DE /* CopyFiles */,
+				7969F7F0170D5681005224DE /* Sources */,
+				7969F7F1170D5681005224DE /* Frameworks */,
+				7969F7F2170D5681005224DE /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -105,48 +216,63 @@
 			);
 			name = "ios-module";
 			productName = "ios-module";
-			productReference = 7969F9B6170D5EF5005224DE /* libios-module.a */;
+			productReference = 7969F7F4170D5681005224DE /* libios-module.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7969F9AD170D5EF5005224DE /* Project object */ = {
+		7969F7EB170D5681005224DE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = bmcool;
 			};
-			buildConfigurationList = 7969F9B0170D5EF5005224DE /* Build configuration list for PBXProject "ios-module" */;
+			buildConfigurationList = 7969F7EE170D5681005224DE /* Build configuration list for PBXProject "ios-module" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7969F9AB170D5EF5005224DE;
-			productRefGroup = 7969F9B7170D5EF5005224DE /* Products */;
+			mainGroup = 7969F7E9170D5681005224DE;
+			productRefGroup = 7969F7F5170D5681005224DE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7969F9B5170D5EF5005224DE /* ios-module */,
+				7969F7F3170D5681005224DE /* ios-module */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7969F9B2170D5EF5005224DE /* Sources */ = {
+		7969F7F0170D5681005224DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7969F9C1170D5EF5005224DE /* ios_module.m in Sources */,
+				7969F7FF170D5681005224DE /* ios_module.m in Sources */,
+				7969F8FE170D5764005224DE /* Http.m in Sources */,
+				7969F8FF170D5764005224DE /* JSONKit.m in Sources */,
+				7969F900170D5764005224DE /* MethodSwizzle.c in Sources */,
+				7969F902170D5764005224DE /* MotionViewController.m in Sources */,
+				7969F903170D5764005224DE /* MoveViewController.m in Sources */,
+				7969F904170D5764005224DE /* NSArray+Addition.m in Sources */,
+				7969F905170D5764005224DE /* NSObject+PropertyListing.m in Sources */,
+				7969F906170D5764005224DE /* NSObject+Swizzle.m in Sources */,
+				7969F907170D5764005224DE /* NSUserDefaults+MPSecureUserDefaults.m in Sources */,
+				7969F908170D5764005224DE /* OpenWeatherMap.m in Sources */,
+				7969F909170D5764005224DE /* ShakeViewController.m in Sources */,
+				7969F90A170D5764005224DE /* Station.m in Sources */,
+				7969F90B170D5764005224DE /* UIView+Addition.m in Sources */,
+				7969F90C170D5764005224DE /* UIViewController+StoryboardExtend.m in Sources */,
+				7969F90D170D5764005224DE /* Weather.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		7969F9C2170D5EF5005224DE /* Debug */ = {
+		7969F800170D5681005224DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -167,12 +293,12 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		7969F9C3170D5EF5005224DE /* Release */ = {
+		7969F801170D5681005224DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -186,13 +312,13 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		7969F9C5170D5EF5005224DE /* Debug */ = {
+		7969F803170D5681005224DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/ios_module.dst;
@@ -204,7 +330,7 @@
 			};
 			name = Debug;
 		};
-		7969F9C6170D5EF5005224DE /* Release */ = {
+		7969F804170D5681005224DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/ios_module.dst;
@@ -219,24 +345,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7969F9B0170D5EF5005224DE /* Build configuration list for PBXProject "ios-module" */ = {
+		7969F7EE170D5681005224DE /* Build configuration list for PBXProject "ios-module" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7969F9C2170D5EF5005224DE /* Debug */,
-				7969F9C3170D5EF5005224DE /* Release */,
+				7969F800170D5681005224DE /* Debug */,
+				7969F801170D5681005224DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7969F9C4170D5EF5005224DE /* Build configuration list for PBXNativeTarget "ios-module" */ = {
+		7969F802170D5681005224DE /* Build configuration list for PBXNativeTarget "ios-module" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7969F9C5170D5EF5005224DE /* Debug */,
-				7969F9C6170D5EF5005224DE /* Release */,
+				7969F803170D5681005224DE /* Debug */,
+				7969F804170D5681005224DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7969F9AD170D5EF5005224DE /* Project object */;
+	rootObject = 7969F7EB170D5681005224DE /* Project object */;
 }
