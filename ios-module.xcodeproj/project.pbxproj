@@ -25,6 +25,7 @@
 		7969F90B170D5764005224DE /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F8F9170D5764005224DE /* UIView+Addition.m */; };
 		7969F90C170D5764005224DE /* UIViewController+StoryboardExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F8FB170D5764005224DE /* UIViewController+StoryboardExtend.m */; };
 		7969F90D170D5764005224DE /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F8FD170D5764005224DE /* Weather.m */; };
+		79909A87170F0CC70056CD96 /* AudioToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 79909A86170F0CC70056CD96 /* AudioToolkit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -78,6 +79,8 @@
 		7969F8FD170D5764005224DE /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
 		7969F988170D5B14005224DE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		7969F98D170D5BBD005224DE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		79909A85170F0CC70056CD96 /* AudioToolkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioToolkit.h; sourceTree = "<group>"; };
+		79909A86170F0CC70056CD96 /* AudioToolkit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioToolkit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 				7969F8DE170D5764005224DE /* Http.m */,
 				7969F8DF170D5764005224DE /* JSONKit.h */,
 				7969F8E0170D5764005224DE /* JSONKit.m */,
+				79909A85170F0CC70056CD96 /* AudioToolkit.h */,
+				79909A86170F0CC70056CD96 /* AudioToolkit.m */,
 				7969F7FC170D5681005224DE /* ios_module.h */,
 				7969F7FE170D5681005224DE /* ios_module.m */,
 				7969F7FA170D5681005224DE /* Supporting Files */,
@@ -266,6 +271,7 @@
 				7969F90B170D5764005224DE /* UIView+Addition.m in Sources */,
 				7969F90C170D5764005224DE /* UIViewController+StoryboardExtend.m in Sources */,
 				7969F90D170D5764005224DE /* Weather.m in Sources */,
+				79909A87170F0CC70056CD96 /* AudioToolkit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

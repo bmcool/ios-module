@@ -16,6 +16,8 @@
 
 #import "Station.h"
 
+#define EventWeatherChanged @"EventWeatherChanged"
+
 @interface OpenWeatherMap : NSObject<CLLocationManagerDelegate> {
     CLLocationManager *locationManager;
     NSTimer *updateWeatherTimer;
@@ -33,5 +35,6 @@
 + (id)sharedInstance;
 - (void)updateWithLatitude:(CGFloat)latitude Longitude:(CGFloat)longitude;
 - (void)updateWeather;
+- (BOOL)hasData;
 
 @end

@@ -12,11 +12,19 @@
 
 - (void) setButtonsEnable:(BOOL)enable
 {
+    [self setButtonsWithBlock:^(UIButton *btn) {
+        [btn setEnabled:enable];
+    }];
+}
+
+- (void)setButtonsWithBlock:(void (^)(UIButton *btn))block
+{
     for (UIButton *view in [self subviews]) {
         if ([view isKindOfClass:[UIButton class]]) {
-            [view setEnabled:enable];
+            block(view);
         }
     }
+    
 }
 
 @end

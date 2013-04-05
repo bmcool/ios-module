@@ -55,6 +55,17 @@ static OpenWeatherMap *sharedInstance;
     _cacheData = [response objectFromJSONString];
     
     _station = [[Station alloc] initWithDictionary:[[_cacheData objectForKey:@"list"] objectAtIndex:0]];
+    [[NSNotificationCenter defaultCenter] postNotificationName:EventWeatherChanged object:nil];
+}
+
+
+- (BOOL)hasData
+{
+    if (_cacheData) {
+        return YES;
+    } else {
+        return NO;
+    }
 }
 
 #pragma mark -

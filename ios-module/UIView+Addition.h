@@ -10,6 +10,7 @@
 
 @interface UIView (Addition)
 
-- (void) setButtonsEnable:(BOOL)enable;
+- (void)setButtonsEnable:(BOOL)enable;
+- (void)setButtonsWithBlock:(void (^)(UIButton *btn))block;
 
 @end
