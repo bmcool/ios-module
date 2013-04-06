@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		792BFCDB171035BE0085A306 /* NSObject+JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 792BFCDA171035BE0085A306 /* NSObject+JSONKit.m */; };
 		7969F7F8170D5681005224DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7969F7F7170D5681005224DE /* Foundation.framework */; };
 		7969F7FD170D5681005224DE /* ios_module.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7969F7FC170D5681005224DE /* ios_module.h */; };
 		7969F7FF170D5681005224DE /* ios_module.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F7FE170D5681005224DE /* ios_module.m */; };
@@ -42,6 +43,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		792BFCD9171035BE0085A306 /* NSObject+JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSONKit.h"; sourceTree = "<group>"; };
+		792BFCDA171035BE0085A306 /* NSObject+JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSONKit.m"; sourceTree = "<group>"; };
 		7969F7F4170D5681005224DE /* libios-module.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libios-module.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7969F7F7170D5681005224DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7969F7FB170D5681005224DE /* ios-module-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-module-Prefix.pch"; sourceTree = "<group>"; };
@@ -174,6 +177,8 @@
 				7969F8FB170D5764005224DE /* UIViewController+StoryboardExtend.m */,
 				7969F8F0170D5764005224DE /* NSUserDefaults+MPSecureUserDefaults.h */,
 				7969F8F1170D5764005224DE /* NSUserDefaults+MPSecureUserDefaults.m */,
+				792BFCD9171035BE0085A306 /* NSObject+JSONKit.h */,
+				792BFCDA171035BE0085A306 /* NSObject+JSONKit.m */,
 			);
 			name = Additions;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 				7969F90C170D5764005224DE /* UIViewController+StoryboardExtend.m in Sources */,
 				7969F90D170D5764005224DE /* Weather.m in Sources */,
 				79909A87170F0CC70056CD96 /* AudioToolkit.m in Sources */,
+				792BFCDB171035BE0085A306 /* NSObject+JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
