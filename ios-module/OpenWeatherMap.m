@@ -37,7 +37,7 @@ static OpenWeatherMap *sharedInstance;
         [locationManager setDistanceFilter:kCLDistanceFilterNone];
         
         [self updateWeather];
-        updateWeatherTimer = [NSTimer scheduledTimerWithTimeInterval:60*30 target:self selector:@selector(updateWeather) userInfo:nil repeats:YES];
+        updateWeatherTimer = [NSTimer scheduledTimerWithTimeInterval:60*10 target:self selector:@selector(updateWeather) userInfo:nil repeats:YES];
     }
     return self;
 }
@@ -61,7 +61,7 @@ static OpenWeatherMap *sharedInstance;
 
 - (BOOL)hasData
 {
-    if (_cacheData) {
+    if (_cacheData && self.station.city) {
         return YES;
     } else {
         return NO;
