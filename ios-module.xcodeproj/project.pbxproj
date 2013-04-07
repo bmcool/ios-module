@@ -27,6 +27,7 @@
 		7969F90C170D5764005224DE /* UIViewController+StoryboardExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F8FB170D5764005224DE /* UIViewController+StoryboardExtend.m */; };
 		7969F90D170D5764005224DE /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F8FD170D5764005224DE /* Weather.m */; };
 		79909A87170F0CC70056CD96 /* AudioToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 79909A86170F0CC70056CD96 /* AudioToolkit.m */; };
+		79EFE01B1711B02C0057777F /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EFE01A1711B02C0057777F /* UIView+Screenshot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -84,6 +85,8 @@
 		7969F98D170D5BBD005224DE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		79909A85170F0CC70056CD96 /* AudioToolkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioToolkit.h; sourceTree = "<group>"; };
 		79909A86170F0CC70056CD96 /* AudioToolkit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioToolkit.m; sourceTree = "<group>"; };
+		79EFE0191711B02C0057777F /* UIView+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Screenshot.h"; sourceTree = "<group>"; };
+		79EFE01A1711B02C0057777F /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,8 @@
 		7969F90F170D57A1005224DE /* Additions */ = {
 			isa = PBXGroup;
 			children = (
+				79EFE0191711B02C0057777F /* UIView+Screenshot.h */,
+				79EFE01A1711B02C0057777F /* UIView+Screenshot.m */,
 				7969F8EA170D5764005224DE /* NSArray+Addition.h */,
 				7969F8EB170D5764005224DE /* NSArray+Addition.m */,
 				7969F8EC170D5764005224DE /* NSObject+PropertyListing.h */,
@@ -278,6 +283,7 @@
 				7969F90D170D5764005224DE /* Weather.m in Sources */,
 				79909A87170F0CC70056CD96 /* AudioToolkit.m in Sources */,
 				792BFCDB171035BE0085A306 /* NSObject+JSONKit.m in Sources */,
+				79EFE01B1711B02C0057777F /* UIView+Screenshot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
