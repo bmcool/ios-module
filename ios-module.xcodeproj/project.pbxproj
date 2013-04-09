@@ -26,7 +26,10 @@
 		7969F90B170D5764005224DE /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F8F9170D5764005224DE /* UIView+Addition.m */; };
 		7969F90C170D5764005224DE /* UIViewController+StoryboardExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F8FB170D5764005224DE /* UIViewController+StoryboardExtend.m */; };
 		7969F90D170D5764005224DE /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969F8FD170D5764005224DE /* Weather.m */; };
+		796BBF7117146FCF00EDBC7A /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796BBF7017146FCF00EDBC7A /* FacebookSDK.framework */; };
+		796BBF881714947600EDBC7A /* UIResponder+Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 796BBF871714947600EDBC7A /* UIResponder+Facebook.m */; };
 		79909A87170F0CC70056CD96 /* AudioToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 79909A86170F0CC70056CD96 /* AudioToolkit.m */; };
+		79AC33061713B300001F810D /* ShareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AC33051713B300001F810D /* ShareButton.m */; };
 		79EFE01B1711B02C0057777F /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EFE01A1711B02C0057777F /* UIView+Screenshot.m */; };
 /* End PBXBuildFile section */
 
@@ -83,8 +86,13 @@
 		7969F8FD170D5764005224DE /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
 		7969F988170D5B14005224DE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		7969F98D170D5BBD005224DE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		796BBF7017146FCF00EDBC7A /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		796BBF861714947600EDBC7A /* UIResponder+Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Facebook.h"; sourceTree = "<group>"; };
+		796BBF871714947600EDBC7A /* UIResponder+Facebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Facebook.m"; sourceTree = "<group>"; };
 		79909A85170F0CC70056CD96 /* AudioToolkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioToolkit.h; sourceTree = "<group>"; };
 		79909A86170F0CC70056CD96 /* AudioToolkit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioToolkit.m; sourceTree = "<group>"; };
+		79AC33041713B300001F810D /* ShareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareButton.h; sourceTree = "<group>"; };
+		79AC33051713B300001F810D /* ShareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareButton.m; sourceTree = "<group>"; };
 		79EFE0191711B02C0057777F /* UIView+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Screenshot.h"; sourceTree = "<group>"; };
 		79EFE01A1711B02C0057777F /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +103,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7969F7F8170D5681005224DE /* Foundation.framework in Frameworks */,
+				796BBF7117146FCF00EDBC7A /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +131,7 @@
 		7969F7F6170D5681005224DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				796BBF7017146FCF00EDBC7A /* FacebookSDK.framework */,
 				7969F7F7170D5681005224DE /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -130,6 +140,7 @@
 		7969F7F9170D5681005224DE /* ios-module */ = {
 			isa = PBXGroup;
 			children = (
+				79AC33021713B2E0001F810D /* Views */,
 				7969F910170D57B8005224DE /* OpenWeatherMap */,
 				7969F90F170D57A1005224DE /* Additions */,
 				7969F90E170D5797005224DE /* ViewControllers */,
@@ -214,6 +225,25 @@
 			name = MotionViewController;
 			sourceTree = "<group>";
 		};
+		796BBF561714684A00EDBC7A /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				79AC33041713B300001F810D /* ShareButton.h */,
+				79AC33051713B300001F810D /* ShareButton.m */,
+				796BBF861714947600EDBC7A /* UIResponder+Facebook.h */,
+				796BBF871714947600EDBC7A /* UIResponder+Facebook.m */,
+			);
+			name = Share;
+			sourceTree = "<group>";
+		};
+		79AC33021713B2E0001F810D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				796BBF561714684A00EDBC7A /* Share */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,6 +314,8 @@
 				79909A87170F0CC70056CD96 /* AudioToolkit.m in Sources */,
 				792BFCDB171035BE0085A306 /* NSObject+JSONKit.m in Sources */,
 				79EFE01B1711B02C0057777F /* UIView+Screenshot.m in Sources */,
+				79AC33061713B300001F810D /* ShareButton.m in Sources */,
+				796BBF881714947600EDBC7A /* UIResponder+Facebook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +372,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/ios_module.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios-module/ios-module-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -352,6 +388,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/ios_module.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios-module/ios-module-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
