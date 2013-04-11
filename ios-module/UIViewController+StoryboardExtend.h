@@ -6,12 +6,13 @@
 //  Copyright (c) 2013年 lifebaby. All rights reserved.
 //
 
+// Usage :
+//     If Storyboard use [Class] name, the view will follow xib.
+//     If Storyboard use [_Class] name, the view will follow storyboard.
+
+
 #import <UIKit/UIKit.h>
 
 @interface UIViewController (StoryboardExtend)
-
--(void) extendViewWillAppear;
--(void) extendViewDidDisAppear;
--(void) extendViewDidLoad;
 
 @end

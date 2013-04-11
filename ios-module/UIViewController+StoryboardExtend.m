@@ -57,8 +57,6 @@
             [self setValue:view forKey:property];
         }
     }
-    
-    
 }
 
 - (void) myViewWillAppear:(BOOL)animated
