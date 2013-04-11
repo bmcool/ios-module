@@ -16,12 +16,14 @@
     return [FBSession.activeSession handleOpenURL:url];
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application {
+- (void)applicationWillTerminate:(UIApplication *)application
+{
     [FBSession.activeSession close];
 }
 
 
-- (void)applicationDidBecomeActive:(UIApplication *)application	{
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
     [FBSession.activeSession handleDidBecomeActive];
 }
 

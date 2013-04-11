@@ -24,6 +24,10 @@
 
 - (void) socialShare
 {
+    if ([self.delegate respondsToSelector:@selector(shareButtonWillShare:)]) {
+        [self.delegate shareButtonWillShare:self];
+    }
+    
     if ([ShareButton isSocialFrameworkAvailable]) {
         NSMutableArray *activityItems = [NSMutableArray new];
         if (self.shareMessage != nil) {
@@ -42,7 +46,6 @@
     }
 }
 
-
 #pragma mark -
 #pragma mark - iOS 5 Share methods
 
@@ -50,10 +53,10 @@
 {
     if (buttonIndex != actionSheet.cancelButtonIndex) {
         if (buttonIndex == 0) {
-            if (self.feedMessage) {
-                [self facebookPostFeed];
-            } else if (self.shareImage) {
+            if (self.shareImage) {
                 [self facebookPostPhoto];
+            } else if (self.feedMessage) {
+                [self facebookPostFeed];
             }
         } else if (buttonIndex == 1) {
             [self twitterShare];
@@ -146,7 +149,7 @@
     if (error) {
         alertTitle = @"Error";
         alertMsg = @"Operation failed due to a connection problem, retry later.";
-//        alertMsg = [error description];
+        alertMsg = [error description];
     } else {
         alertTitle = @"Success";
         alertMsg = @"Successfully posted on Facebook.";
@@ -211,16 +214,19 @@
 
 - (void) facebookPostPhoto
 {
-    NSMutableDictionary* params = [[NSMutableDictionary alloc] init];
-    
-    if (self.shareMessage != nil) {
-        [params setObject:self.shareMessage forKey:@"message"];
-    }
-    [params setObject:self.shareImage forKey:@"picture"];
-    
-    [FBRequestConnection startWithGraphPath:@"me/photos" parameters:params HTTPMethod:@"POST" completionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
-        [self facebookShowAlertWithError:error];
+    [self performPublishAction:^{
+        NSMutableDictionary* params = [[NSMutableDictionary alloc] init];
+        
+        if (self.shareMessage != nil) {
+            [params setObject:self.shareMessage forKey:@"message"];
+        }
+        [params setObject:self.shareImage forKey:@"picture"];
+        
+        [FBRequestConnection startWithGraphPath:@"me/photos" parameters:params HTTPMethod:@"POST" completionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+            [self facebookShowAlertWithError:error];
+        }];
     }];
+
 }
 
 - (void)facebookPickFriends

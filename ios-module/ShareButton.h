@@ -21,31 +21,42 @@
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
 
+@class ShareButton;
+
+@protocol ShareButtonDelegate <NSObject>
+
+@optional
+- (void) shareButtonWillShare:(ShareButton *)shareButton;
+
+@end
+
+
+
 @interface ShareButton : UIButton<UIActionSheetDelegate, MFMailComposeViewControllerDelegate>
 
-@property (weak, nonatomic) UIViewController *delegate;
+@property (weak, nonatomic) UIViewController <ShareButtonDelegate> *delegate;
 
-// For Twitter / Facebook Photo
-@property (weak, nonatomic) UIImage *shareImage;
-@property (weak, nonatomic) NSString *shareMessage;
+// For Twitter / "Facebook Photo"
+@property (strong, nonatomic) UIImage *shareImage;
+@property (strong, nonatomic) NSString *shareMessage;
 
 
 // For Facebook Feed
-@property (weak, nonatomic) NSString *feedMessage;
-@property (weak, nonatomic) NSString *feedName;
-@property (weak, nonatomic) NSString *feedCaption;
-@property (weak, nonatomic) NSString *feedDescription;
-@property (weak, nonatomic) NSString *feedLink;
-@property (weak, nonatomic) NSString *feedPictureURL;
+@property (strong, nonatomic) NSString *feedMessage;
+@property (strong, nonatomic) NSString *feedName;
+@property (strong, nonatomic) NSString *feedCaption;
+@property (strong, nonatomic) NSString *feedDescription;
+@property (strong, nonatomic) NSString *feedLink;
+@property (strong, nonatomic) NSString *feedPictureURL;
 
 // For EMail
-@property (weak, nonatomic) NSString *mailSubject;
-@property (weak, nonatomic) NSString *mailMessage;
-@property (weak, nonatomic) NSArray *mailRecipients;
-@property (weak, nonatomic) UIImage *mailImage;
+@property (strong, nonatomic) NSString *mailSubject;
+@property (strong, nonatomic) NSString *mailMessage;
+@property (strong, nonatomic) NSArray *mailRecipients;
+@property (strong, nonatomic) UIImage *mailImage;
 
 // For LINE
-@property (weak, nonatomic) NSString *lineMessage;
+@property (strong, nonatomic) NSString *lineMessage;
 
 
 
