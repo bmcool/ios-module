@@ -30,6 +30,7 @@
 		796BBF881714947600EDBC7A /* UIResponder+Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 796BBF871714947600EDBC7A /* UIResponder+Facebook.m */; };
 		79909A87170F0CC70056CD96 /* AudioToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 79909A86170F0CC70056CD96 /* AudioToolkit.m */; };
 		79AC33061713B300001F810D /* ShareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AC33051713B300001F810D /* ShareButton.m */; };
+		79D4C4271748911400DA8FA5 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D4C4261748911400DA8FA5 /* LoadingView.m */; };
 		79EFE01B1711B02C0057777F /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EFE01A1711B02C0057777F /* UIView+Screenshot.m */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,8 @@
 		79909A86170F0CC70056CD96 /* AudioToolkit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioToolkit.m; sourceTree = "<group>"; };
 		79AC33041713B300001F810D /* ShareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareButton.h; sourceTree = "<group>"; };
 		79AC33051713B300001F810D /* ShareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareButton.m; sourceTree = "<group>"; };
+		79D4C4251748911400DA8FA5 /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		79D4C4261748911400DA8FA5 /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
 		79EFE0191711B02C0057777F /* UIView+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Screenshot.h"; sourceTree = "<group>"; };
 		79EFE01A1711B02C0057777F /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -239,6 +242,8 @@
 		79AC33021713B2E0001F810D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				79D4C4251748911400DA8FA5 /* LoadingView.h */,
+				79D4C4261748911400DA8FA5 /* LoadingView.m */,
 				796BBF561714684A00EDBC7A /* Share */,
 			);
 			name = Views;
@@ -316,6 +321,7 @@
 				79EFE01B1711B02C0057777F /* UIView+Screenshot.m in Sources */,
 				79AC33061713B300001F810D /* ShareButton.m in Sources */,
 				796BBF881714947600EDBC7A /* UIResponder+Facebook.m in Sources */,
+				79D4C4271748911400DA8FA5 /* LoadingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
